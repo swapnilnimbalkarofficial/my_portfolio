@@ -1,2 +1,2 @@
 # my_portfolio
-In this repository i create responsive portfolio
+In this repository I have create responsive portfolio.
