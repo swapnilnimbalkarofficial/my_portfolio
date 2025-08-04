@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="contact-section">
+
+  <section class="section contact" id="contact">
+    <div class="container">
+
+      <div class="section-title-container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Feel free to drop a message</p>
+      </div>
+
+      <div class="contact-container">
+
+        <!-- Web3Forms Contact Form -->
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+          <!-- Optional Subject -->
+          <input type="hidden" name="subject" value="New Message from Portfolio Contact Form">
+
+          <!-- Optional Redirect after submission -->
+          <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thanks.html"> -->
+
+          <!-- Honeypot for Spam Protection -->
+          <input type="checkbox" name="botcheck" style="display: none;" />
+
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="phone" placeholder="Phone Number" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <p>
+            <i class="fas fa-envelope"></i> swapnilnimbalkarofficial@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-phone-alt"></i> +91 96043 29196
+          </p>
+          <p>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/swapnilnimbalkar/" target="_blank">LinkedIn</a>
+          </p>
+          <p>
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/swapnilnimbalkarofficial" target="_blank">GitHub</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</th:block>
+</html>
